@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.github.hiwepy</groupId>
+	<groupId>io.github.hiwepy</groupId>
 	<artifactId>security-qrcode-spring-boot-starter</artifactId>
 	<description>Spring Boot Starter For Spring Security With QrCode</description>
 	<version>1.0.1.RELEASE</version>
@@ -373,13 +373,13 @@
 		<dependencies>
 			<!-- https://github.com/hiwepy/security-biz-spring-boot-starter -->
 			<dependency>
-				<groupId>com.github.hiwepy</groupId>
+				<groupId>io.github.hiwepy</groupId>
 				<artifactId>security-biz-spring-boot-starter</artifactId>
 				<version>${spring-security-biz.version}</version>
 			</dependency>
 			<!-- https://github.com/hiwepy/spring-boot-starter-zxing -->
 			<dependency>
-				<groupId>com.github.hiwepy</groupId>
+				<groupId>io.github.hiwepy</groupId>
 				<artifactId>zxing-spring-boot-starter</artifactId>
 				<version>${spring-boot-starter-zxing.version}</version>
 			</dependency>
@@ -390,17 +390,17 @@
 			    <version>${fastjson.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.github.hiwepy</groupId>
+				<groupId>io.github.hiwepy</groupId>
 				<artifactId>jwt-issuer-api</artifactId>
 				<version>${jwt-issuer.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.github.hiwepy</groupId>
+				<groupId>io.github.hiwepy</groupId>
 				<artifactId>jwt-issuer-with-jjwt</artifactId>
 				<version>${jwt-issuer.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.github.hiwepy</groupId>
+				<groupId>io.github.hiwepy</groupId>
 				<artifactId>jwt-issuer-with-nimbus</artifactId>
 				<version>${jwt-issuer.version}</version>
 			</dependency>
@@ -478,12 +478,12 @@
 
 		<!-- https://github.com/hiwepy/security-biz-spring-boot-starter -->
 		<dependency>
-			<groupId>com.github.hiwepy</groupId>
+			<groupId>io.github.hiwepy</groupId>
 			<artifactId>security-biz-spring-boot-starter</artifactId>
 		</dependency>
 		<!-- https://github.com/hiwepy/spring-boot-starter-zxing -->
 		<dependency>
-			<groupId>com.github.hiwepy</groupId>
+			<groupId>io.github.hiwepy</groupId>
 			<artifactId>zxing-spring-boot-starter</artifactId>
 		</dependency>
 
@@ -502,16 +502,16 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.github.hiwepy</groupId>
+			<groupId>io.github.hiwepy</groupId>
 			<artifactId>jwt-issuer-api</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.github.hiwepy</groupId>
+			<groupId>io.github.hiwepy</groupId>
 			<artifactId>jwt-issuer-with-jjwt</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.github.hiwepy</groupId>
+			<groupId>io.github.hiwepy</groupId>
 			<artifactId>jwt-issuer-with-nimbus</artifactId>
 			<scope>provided</scope>
 		</dependency>
