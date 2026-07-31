@@ -1,6 +1,6 @@
 package org.springframework.security.boot.qrcode.authentication;
 
-import io.github.hiwepy.jwt.JwtPayload;
+import io.github.easy4j.jwt.JwtPayload;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.support.MessageSourceAccessor;
