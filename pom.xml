@@ -12,7 +12,7 @@
     <groupId>io.github.easy4j</groupId>
     <artifactId>security-qrcode-spring-boot-starter</artifactId>
     <description>Spring Boot Starter For Spring Security With QrCode</description>
-    <version>4.0.x.20260527-SNAPSHOT</version>
+    <version>4.0.x.20260630-SNAPSHOT</version>
     <name>${project.groupId}:${project.artifactId}</name>
     <url>https://github.com/easy-4-java/${project.artifactId}</url>
     <packaging>jar</packaging>
@@ -405,7 +405,7 @@
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>17</java.version>
+        <java.version>21</java.version>
         <maven.compiler.release>${java.version}</maven.compiler.release>
         
         <maven.version>3.9.9</maven.version>
@@ -433,9 +433,9 @@
         <maven-war-plugin.version>3.4.0</maven-war-plugin.version>
         
         <fastjson2.version>2.0.53</fastjson2.version>
-        <jwt-issuer.version>1.1.4.1.RELEASE</jwt-issuer.version>
-        <spring-boot-starter-security-biz.version>3.3.x.20241003.RELEASE</spring-boot-starter-security-biz.version>
-        <spring-boot-starter-zxing.version>3.3.x.20240823.RELEASE</spring-boot-starter-zxing.version>
+        <jwt-issuer.version>3.0.x.20260630-SNAPSHOT</jwt-issuer.version>
+        <spring-boot-starter-security-biz.version>4.0.x.20260630-SNAPSHOT</spring-boot-starter-security-biz.version>
+        <spring-boot-starter-zxing.version>4.0.x.20260630-SNAPSHOT</spring-boot-starter-zxing.version>
         <swagger.version>1.5.24</swagger.version>
                 <slf4j.version>2.0.18</slf4j.version>
     </properties>
