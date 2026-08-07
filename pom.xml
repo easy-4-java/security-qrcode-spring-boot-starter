@@ -523,14 +523,8 @@
         
         <!-- For Servlet Api -->
         <dependency>
-<<<<<<< Updated upstream
             <groupId>jakarta.servlet</groupId>
             <artifactId>jakarta.servlet-api</artifactId>
-=======
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>${javax.servlet-api.version}</version>
->>>>>>> Stashed changes
             <optional>true</optional>
         </dependency>
 
