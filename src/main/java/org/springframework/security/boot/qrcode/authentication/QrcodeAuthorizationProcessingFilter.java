@@ -25,7 +25,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.session.NullAuthenticatedSessionStrategy;
 import org.springframework.security.web.authentication.session.SessionAuthenticationStrategy;
-import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
+import org.springframework.security.web.servlet.util.matcher.PathPatternRequestMatcher;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -58,7 +58,7 @@ public class QrcodeAuthorizationProcessingFilter extends PostOnlyAuthenticationP
 	private SessionAuthenticationStrategy sessionStrategy = new NullAuthenticatedSessionStrategy();
 
 	public QrcodeAuthorizationProcessingFilter() {
-		super(new AntPathRequestMatcher("/login/qrcode"));
+		super(PathPatternRequestMatcher.pathPattern("/login/qrcode"));
 	}
 
 	@Override

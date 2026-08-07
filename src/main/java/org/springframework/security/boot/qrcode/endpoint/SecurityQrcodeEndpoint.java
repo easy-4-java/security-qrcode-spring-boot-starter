@@ -1,7 +1,6 @@
 package org.springframework.security.boot.qrcode.endpoint;
 
 import com.alibaba.fastjson2.JSONObject;
-import com.beust.jcommander.internal.Maps;
 import com.google.zxing.spring.boot.ZxingQrCodeTemplate;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
@@ -14,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.Duration;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
@@ -43,7 +43,7 @@ public class SecurityQrcodeEndpoint {
 	@ResponseBody
 	public ResponseEntity<Map<String, Object>> qrcode() {
 		
-		Map<String, Object> rtMap = Maps.newHashMap();
+		Map<String, Object> rtMap = new HashMap<>();
 		
 		try {
 			
@@ -73,7 +73,7 @@ public class SecurityQrcodeEndpoint {
 	@ResponseBody
 	public ResponseEntity<Map<String, Object>> bind(@RequestParam String uuid) {
 		
-		Map<String, Object> rtMap = Maps.newHashMap();
+		Map<String, Object> rtMap = new HashMap<>();
 		
 		try {
 			
