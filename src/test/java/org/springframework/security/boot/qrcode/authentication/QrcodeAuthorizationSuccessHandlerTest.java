@@ -13,24 +13,26 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package org.springframework.security.boot.qrcode.userdetails;
+package org.springframework.security.boot.qrcode.authentication;
 
-import lombok.Data;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * TODO
+ * Unit tests for {{ @link QrcodeAuthorizationSuccessHandler }}.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 1.0.0
  */
-@Data
-public class QrcodeInfo {
-	
-	/**
-	 * 二维码UUID
-	 */
-	protected String uuid;
-	/**
-	 * uuid 对应的用户ID（移动端扫码后才会获取到数据）
-	 */
-	protected String userId;
+@DisplayName("QrcodeAuthorizationSuccessHandler Tests")
+class QrcodeAuthorizationSuccessHandlerTest {
 
+    @Test
+    @DisplayName("Instance can be created via constructor")
+    void testInstantiation() {
+        QrcodeAuthorizationSuccessHandler instance = new QrcodeAuthorizationSuccessHandler(null, null);
+        assertThat(instance).isNotNull();
+    }
 }
