@@ -25,7 +25,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.session.NullAuthenticatedSessionStrategy;
 import org.springframework.security.web.authentication.session.SessionAuthenticationStrategy;
-import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
+import org.springframework.security.web.servlet.util.matcher.PathPatternRequestMatcher;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -38,7 +38,7 @@ import java.io.IOException;
 
 /**
  * 二维码扫码登录授权 (authorization)过滤器
- * @author ： <a href="https://github.com/hiwepy">hiwepy</a>
+ * @author [@Loong Wan](https://github.com/loong10k)
  */
 public class QrcodeAuthorizationProcessingFilter extends PostOnlyAuthenticationProcessingFilter {
 
@@ -58,7 +58,7 @@ public class QrcodeAuthorizationProcessingFilter extends PostOnlyAuthenticationP
 	private SessionAuthenticationStrategy sessionStrategy = new NullAuthenticatedSessionStrategy();
 
 	public QrcodeAuthorizationProcessingFilter() {
-		super(new AntPathRequestMatcher("/login/qrcode"));
+		super(PathPatternRequestMatcher.pathPattern("/login/qrcode"));
 	}
 
 	@Override
