@@ -1,8 +1,6 @@
 package org.springframework.security.boot.qrcode.authentication;
 
-import java.util.HashSet;
-import java.util.Set;
-
+import io.github.easy4j.jwt.JwtPayload;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.support.MessageSourceAccessor;
@@ -22,12 +20,13 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetailsChecker;
 import org.springframework.util.Assert;
 
-import io.github.easy4j.jwt.JwtPayload;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  *
  * Jwt授权 (authorization)处理器
- * @author 		： <a href="https://github.com/hiwepy">wandl</a>
+ * @author [@Loong Wan](https://github.com/loong10k)
  */
 public class QrcodeAuthorizationProvider implements AuthenticationProvider {
 
@@ -47,7 +46,7 @@ public class QrcodeAuthorizationProvider implements AuthenticationProvider {
     /**
      *
      * 完成匹配Token的认证，这里返回的对象最终会通过：SecurityContextHolder.getContext().setAuthentication(authResult); 放置在上下文中
-     * @author 		：<a href="https://github.com/hiwepy">wandl</a>
+     * @author [@Loong Wan](https://github.com/loong10k)
      * @param authentication  {@link QrcodeAuthorizationToken} 对象
      * @return 认证结果{@link QrcodeAuthorizationToken}对象
      * @throws AuthenticationException 认证失败会抛出异常
