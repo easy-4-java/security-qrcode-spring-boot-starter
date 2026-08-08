@@ -38,7 +38,7 @@ import java.io.IOException;
 
 /**
  * 二维码扫码登录授权 (authorization)过滤器
- * @author ： <a href="https://github.com/hiwepy">hiwepy</a>
+ * @author [@Loong Wan](https://github.com/loong10k)
  */
 public class QrcodeAuthorizationProcessingFilter extends PostOnlyAuthenticationProcessingFilter {
 
